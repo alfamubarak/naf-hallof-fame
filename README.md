@@ -90,3 +90,8 @@ An offline-first glassmorphic exhibition inspired by the **interaction language*
 **GSAP installation requirement:** The build environment cannot download the original JavaScript distribution. This ZIP includes `install-gsap.bat` / `install-gsap.ps1` for **one-time** download of genuine GSAP + ScrollTrigger from jsDelivr on a connected Windows PC. Run `install-gsap.bat` once before unplugging the kiosk from the internet. The scripts save both JS files locally in `libs/gsap/`. Then run `prepare.bat` and `run.bat` offline. An error or missing library leaves the native animated fallback operational, but the additional GSAP motion does not run. Read `libs/gsap/README.txt` for the exact version and licence.
 
 Full Windows kiosk and true GSAP playback need acceptance testing on the destination Windows Edge machine; Linux/browser synthetic tests cannot substitute for that test.
+
+
+## Welcome screen video background (9 November 2026)
+
+The welcome/intro screen alone plays the **original user-supplied** `assets/videos/intro.mp4` silently as a cinematic full-screen background. Use the PAUSE BACKGROUND / PLAY BACKGROUND control in the lower-right corner. The background pauses when a visitor enters the museum or opens the introduction film and resumes on return; it also pauses if the browser tab is hidden. The fallback archival image is displayed if video cannot load. No other chapter background has been modified. The main package already includes `intro.mp4`; the other six videos are separately packaged, or included in the full archive.

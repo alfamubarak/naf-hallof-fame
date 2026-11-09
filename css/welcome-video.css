@@ -1,0 +1,14 @@
+/* Cinematic introduction only. All chapter backgrounds remain unchanged. */
+.welcome-screen{isolation:isolate}
+.welcome-screen .welcome-image{z-index:0}
+.welcome-screen .welcome-background-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%;z-index:0;opacity:0;pointer-events:none;transition:opacity 1.2s cubic-bezier(.19,1,.22,1);filter:saturate(.92) contrast(1.04);background:#09131b}
+.welcome-screen .welcome-background-video.is-ready{opacity:1}
+.welcome-screen .welcome-shade{z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(3,12,20,.95) 0%,rgba(4,15,24,.84) 34%,rgba(4,15,25,.56) 66%,rgba(5,16,25,.33) 100%),linear-gradient(0deg,rgba(3,13,23,.92),transparent 29%,rgba(3,12,24,.16) 70%,rgba(3,11,20,.32));}
+.welcome-screen .welcome-top,.welcome-screen .welcome-content,.welcome-screen .welcome-footer{z-index:3}
+.welcome-video-toggle{position:absolute;right:5%;bottom:75px;z-index:5;display:inline-flex;align-items:center;gap:12px;padding:12px 15px;border:1px solid rgba(242,211,135,.43);border-radius:8px;background:rgba(7,20,30,.38);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#f8f3e9;font-size:10px;font-weight:800;letter-spacing:.13em;cursor:pointer;box-shadow:0 8px 36px rgba(0,0,0,.25);transition:background .25s,border-color .25s,transform .25s}
+.welcome-video-toggle:hover,.welcome-video-toggle:focus-visible{background:rgba(33,46,52,.74);border-color:rgba(251,217,128,.85);transform:translateY(-2px)}
+.welcome-video-toggle-icon{font-size:15px;color:#edc457;line-height:1;min-width:13px}
+.welcome-video-toggle:focus-visible{outline:2px solid #edc457;outline-offset:3px}
+@media(max-width:700px){.welcome-video-toggle{right:5%;bottom:55px;padding:10px 12px;font-size:9px}.welcome-screen .welcome-background-video{object-position:60% center}.welcome-screen .welcome-shade{background:linear-gradient(90deg,rgba(4,13,21,.88),rgba(4,13,21,.43)),linear-gradient(0deg,rgba(4,13,21,.9),transparent 42%)} }
+@media(max-width:430px){.welcome-video-toggle{bottom:62px}.welcome-video-toggle-label{letter-spacing:.07em}}
+@media(prefers-reduced-motion:reduce){.welcome-screen .welcome-background-video{transition:none}.welcome-video-toggle{transition:none}}
