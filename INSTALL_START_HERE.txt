@@ -1,0 +1,13 @@
+NIGERIAN AIR FORCE / AETHER GLASS — IMMERSIVE MUSEUM
+
+1. Extract this ZIP to a folder on Windows.
+2. For genuine GSAP animations: connect to the internet ONCE and run install-gsap.bat. This downloads the official GSAP 3.14.2 and ScrollTrigger JavaScript locally. (Optional, but recommended.)
+3. Run prepare.bat. It checks your files and Microsoft Edge.
+4. Run run.bat to open the exhibition fullscreen.
+5. Disconnect the machine from the internet: the site and its locally installed GSAP libraries can operate offline.
+
+The exhibition is NOT a game. Glassmorphism, scroll-driven GSAP transitions, magnetic controls and immersive image reveal effects are visual storytelling only.
+
+If you downloaded the smaller Main ZIP, extract the three Video packs into the SAME parent folder, merging their naf-museum-kiosk/assets/videos/ paths. The main museum runs without the videos; the films section needs their files.
+
+This build is reconstructed from your original content. Verify the final exhibition with your committee and test Windows Edge kiosk mode on the target machine before public use.

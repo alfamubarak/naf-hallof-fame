@@ -1,0 +1,19 @@
+{
+  "edition": "Cinematic Exhibition Edition \u2014 no games or scoring",
+  "created_on": "2026-11-09",
+  "historical_dataset_sha256": "1c4e87f0d1394797b8b17422081b830c9ab348245a0c097aafbbd9b670deccc7",
+  "games": [],
+  "visitor_mission_badges": 0,
+  "new_code": [
+    "js/immersive.js",
+    "css/immersive.css"
+  ],
+  "run_offline": true,
+  "requires_server": false,
+  "requires_internet": false,
+  "browser_interaction_test": "passed in injected local document; direct file or HTTP navigation blocked by environment policy",
+  "edge_kiosk_windows_test": "not tested; verify on Windows 10/11",
+  "runtime_animations": "Fully offline Web Animations API, CSS and canvas; GSAP runtime not bundled",
+  "source_materials": "original user-provided Nigerian Air Force history, Department history, images and films",
+  "interaction_policy": "No quizzes, no games, no XP, no badges; immersive exploration and kinetic UI only"
+}
